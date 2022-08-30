@@ -1,0 +1,371 @@
+:root {
+  --background-color: #ffffff;
+  --footer-color: #2f303a;
+  --main-background-color: #f5f5f5;
+  --second-background-color: #f5f4fa;
+  --maintext-color: #212121;
+  --accent-color: #2196f3;
+  --accent-second-color: #333333;
+  --paragraph-color: #757575;
+  --text-color: #000000;
+  --address-color: rgba(255, 255, 255, 0.6);
+  --group-color: #eeeeee;
+  --line-color: #ececec;
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Raleway", sans-serif;
+}
+
+body {
+  /**основные**/
+  background-color: var(--background-color);
+  color: var(--maintext-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.address {
+  font-style: normal;
+}
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-studio {
+  border-bottom: 1px solid #ececec;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-list-nav {
+  display: flex;
+  gap: 30px;
+}
+.logo {
+  color: var(--text-color);
+  font-weight: 700;
+  font-family: var(--second-font);
+  font-style: normal;
+  line-height: 1.2;
+  font-size: 26px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 93px;
+}
+
+.header {
+  width: 696px;
+  color: var(--background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mat-color {
+  line-height: 1.71;
+  text-decoration: none;
+  color: var(--address-color);
+}
+.navigation-item {
+  display: block;
+  color: var(--maintext-color);
+  text-decoration: none;
+  padding: 32px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.navigation-item + .navigation-item {
+  margin-left: 50px;
+}
+.logo-blue {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+}
+.contacts-item {
+  text-decoration: none;
+  color: var(--paragraph-color);
+  width: 122px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.contacts-item + .contacts-item {
+  margin-left: 50px;
+}
+
+.team {
+  background-color: var(--second-background-color);
+}
+.navigation-item:hover,
+.navigation-item:focus {
+  color: var(--accent-color);
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--accent-color);
+}
+.filter {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+  gap: 8px;
+}
+.filter-item {
+  /*кнопки фильтра портфолио*/
+  padding: 6px 22px;
+  border: 0;
+  background-color: var(--second-background-color);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--maintext-color);
+  cursor: pointer;
+}
+.filter-item:hover,
+.filter-item:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+/* visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.img-list {
+  /* background-color: var(--second-background-color);*/
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.hero {
+  background-color: var(--footer-color);
+  padding: 200px 0;
+}
+.hero .header {
+  /* max-width: 1600px;
+  text-align: center;*/
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.button-serv {
+  display: block;
+  margin-top: 30px;
+  padding: 10px 32px;
+  margin: 0 auto;
+  font-family: inherit;
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  min-width: 216px;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+.characters {
+  display: flex;
+  gap: 30px;
+}
+.title {
+  /*заголовок проектов в порфолио*/
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+.title-char {
+  /*заголовок характеристик в студия*/
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-align: left;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.txt-char {
+  /*текст характеристик в студия*/
+
+  font-weight: 400;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--paragraph-color);
+}
+.title-why {
+  /*заголовок чем мы занимаемя( и наша команда) в студия*/
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.why-list,
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+.why-list:first-child,
+.team-list:first-child {
+  margin-left: 0;
+}
+.text {
+  /*текст в проектах портфолио*/
+  font-family: inherit;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--paragraph-color);
+}
+.work {
+  padding-top: 0;
+}
+.team-item {
+  max-width: 270px;
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--background-color);
+}
+.team-name {
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--maintext-color);
+}
+.team-card {
+  padding: 30px 0;
+}
+.team-item-text {
+  padding-bottom: 30px;
+}
+.card-set {
+  /* background-color: var(--group-color);*/
+}
+.card-item {
+  padding: 20px 24px;
+  border: 1px solid var(--group-color);
+  border-top: none;
+}
+.team-prof {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--paragraph-color);
+}
+.foot {
+  padding: 60px 0;
+}
+.logo-footer {
+}
+.address {
+  text-decoration: none;
+  font-style: normal;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.list .address:hover,
+.list .mat-color:hover,
+.list .address:focus,
+.list .mat-color:focus {
+  color: var(--accent-color);
+}
+.foot,
+.foot .logo,
+.foot .address {
+  background-color: var(--footer-color);
+  /*куда переставить цвет текста?!!!!!*/
+  color: var(--background-color);
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
