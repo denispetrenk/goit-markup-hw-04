@@ -28,7 +28,6 @@ body {
   font-family: var(--main-font);
   font-size: 14px;
   letter-spacing: 0.03em;
-  margin: 0;
 }
 h1,
 h2,
@@ -143,13 +142,19 @@ img {
   margin-left: auto;
 }
 .contacts-item {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--paragraph-color);
-  width: 122px;
+  /* width: 122px; */
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1t4px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+}
+.svg-contacts {
+  margin-right: 10px;
+  fill: currentColor;
 }
 .contacts-item + .contacts-item {
   margin-left: 50px;
@@ -159,7 +164,7 @@ img {
   background-color: var(--second-background-color);
 }
 .team-social {
-  margin-bottom: 16px;
+  /*  margin-bottom: 16px;*/
 }
 .navigation-item:hover,
 .navigation-item:focus {
@@ -168,9 +173,11 @@ img {
 
 .contacts-item:hover,
 .contacts-item:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  color: var(--background-color);
+  /* fill: var(--accent-color);*/
+  background-color: var(--accent-color);
 }
+
 .contacts-vec {
   color: #000000;
 }
@@ -221,19 +228,23 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
-/*check*/
+
 .hero {
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: url("../images/hero-backgr.jpg");
-  padding: 200px 0;
-}
-.overlay {
   background-image: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
   );
+  background-image: url("../images/hero-backgr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
+
 .hero .header {
   /* max-width: 1600px;
   text-align: center;*/
@@ -357,10 +368,10 @@ img {
 .card-set {
   /* background-color: var(--group-color);*/
 }
-.card-set:hover,
+/*.card-set:hover,
 .card-set:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+}*/
 
 .card-item {
   padding: 20px 24px;
@@ -379,22 +390,48 @@ img {
 .team-icon a {
   text-decoration: none;
   fill: var(--social-color);
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1);*/
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.clients {
+.clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--paragraph-color);
+  /* width: 122px; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+
+  /* padding: 16px 32px;*/
+}
+.clients-icon {
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-color);
   border-radius: 4px;
-  padding: 16px 32px;
-}
-.clients:hover {
-  border: 1px solid var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.clients-icon:hover,
+.clients-icon:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.clients-item .social-item:hover,
+.clients-item .social-item:focus {
+  fill: var(--accent-color);
+}
 .foot-address {
   font-style: normal;
   margin-top: 20px;
@@ -443,6 +480,8 @@ img {
   margin-bottom: 20px;
 }
 .footer-icon {
+  display: flex;
+  justify-content: center;
   fill: var(--background-color);
   background: rgba(255, 255, 255, 0.1);
   width: 44px;
@@ -459,16 +498,38 @@ img {
   margin-left: 70px;
 }
 .social-item {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around;*/
+  fill: currentColor;
 }
-
+.card-link {
+  display: block;
+}
+.card-link:hover,
+.card-link:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .social-links {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-top: 16px;
 }
-.social-links > li {
-  padding: 12px;
+
+.clients-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+.foot .container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--background-color);
 }
